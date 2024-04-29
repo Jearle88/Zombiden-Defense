@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1352,7 +1352,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1400,16 +1400,8 @@ MonoBehaviour:
   src: {fileID: 977674785}
   sfx1: {fileID: 8300000, guid: 27f6f1a7e754c415c9a8b45e0aecc60b, type: 3}
   sfx2: {fileID: 8300000, guid: 27f6f1a7e754c415c9a8b45e0aecc60b, type: 3}
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-  cooldown: 1
-  health: 5
-=======
->>>>>>> Stashed changes
   cooldown: 1.5
   health: 3
->>>>>>> e18a8165e4dfc305c8981c4be4ab56bae55a9293
   Dcount: 0
 --- !u!54 &977674780
 Rigidbody:

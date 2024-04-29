@@ -8,7 +8,6 @@ public class EnemyController : MonoBehaviour
     public AudioSource src;
     public AudioClip sfx1, sfx2;
 
-
     public float cooldown = 1.5f;
     public int health = 3;
     public int Dcount = 0;
