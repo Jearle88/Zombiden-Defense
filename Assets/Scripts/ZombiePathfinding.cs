@@ -20,10 +20,17 @@ public class ZombiePathfinding : MonoBehaviour
     void Update()
     {
         // checks if the remaining distance is less than that of the given stopping distance and checks that the current index will not go above the max distance of the transform array
-        if ((navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance) && (m_CurrentWaypointIndex + 1 < waypoints.Length))
+        if ((navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance))
         {
-            m_CurrentWaypointIndex = m_CurrentWaypointIndex + 1;
-            navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            if (m_CurrentWaypointIndex + 1 == waypoints.Length)
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                m_CurrentWaypointIndex = m_CurrentWaypointIndex + 1;
+                navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            }
         }
     }
 }
