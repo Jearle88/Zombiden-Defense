@@ -7,7 +7,8 @@ public class EnemyController : MonoBehaviour
     public GameObject enemy;
     public AudioSource src;
     public AudioClip sfx1, sfx2;
-    
+
+    public float cooldown = 1.5f;
     public int health = 3;
     public int Dcount = 0;
 
@@ -36,7 +37,7 @@ public class EnemyController : MonoBehaviour
             src.clip = sfx1;
             src.Play();
             health--;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(cooldown);
         } 
     }
 
