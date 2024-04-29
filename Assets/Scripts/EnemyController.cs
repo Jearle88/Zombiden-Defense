@@ -8,7 +8,15 @@ public class EnemyController : MonoBehaviour
     public AudioSource src;
     public AudioClip sfx1, sfx2;
 
+<<<<<<< Updated upstream
     public float cooldown = 1.5f;
+=======
+<<<<<<< HEAD
+    public float cooldown = 2.5f;
+=======
+    public float cooldown = 1.5f;
+>>>>>>> e18a8165e4dfc305c8981c4be4ab56bae55a9293
+>>>>>>> Stashed changes
     public int health = 3;
     public int Dcount = 0;
 
