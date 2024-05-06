@@ -19,17 +19,22 @@ public class DragUIItem :
     [SerializeField]
     RectTransform Canvas;
 
+    LayerMask placingMask;
+
     // private data to store the pointer positions
     private Vector2 mOriginalLocalPointerPosition;
     private Vector3 mOriginalPanelLocalPosition;
     private Vector2 mOriginalPosition; 
 
-
+    // Initializes mOriginalPosition with local position UIDragElement
     private void Start()
     {
         mOriginalPosition = UIDragElement.localPosition;
+        placingMask = LayerMask.GetMask("TowersPlaceable");
     }
 
+    // Called when drag begins. Saves the position UIDragElement 
+    // and the local position of the pointer relative to the canvas
     public void OnBeginDrag(PointerEventData data)
     {
         mOriginalPanelLocalPosition = UIDragElement.localPosition;
@@ -38,8 +43,14 @@ public class DragUIItem :
         data.position, 
         data.pressEventCamera, 
         out mOriginalLocalPointerPosition);
+        Debug.Log("mOriginalLocalPointerPosition: " + mOriginalLocalPointerPosition + 
+            "\nmOriginalPanelLocalPosition: " + mOriginalPanelLocalPosition + 
+            "\nmOriginalPosition: " + mOriginalPosition);
     }
 
+    // Called while drag is happening. Calculates the offset between 
+    // the current and the original position of the pointer
+    // and adjusts the position of UIDragElement
     public void OnDrag(PointerEventData data)
     {
         Vector2 localPointerPosition;
@@ -56,8 +67,17 @@ public class DragUIItem :
             mOriginalPanelLocalPosition + 
             offsetToOriginal;
         }
+
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(
+        Input.mousePosition);
+
+        Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red);
     }
 
+    // Called when drag ends. Performs a raycast from
+    // the mouse pointer position to the world space to determine
+    // where to create a new object
     public void OnEndDrag(PointerEventData eventData)
     {
         StartCoroutine(
@@ -70,16 +90,19 @@ public class DragUIItem :
         Ray ray = Camera.main.ScreenPointToRay(
         Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 1000.0f))
+        
+        if (Physics.Raycast(ray, out hit, 1000.0f, placingMask))
         {
-        Vector3 worldPoint = hit.point;
+            Vector3 worldPoint = hit.point;
 
-        //Debug.Log(worldPoint);
-        CreateObject(worldPoint);
+
+            Debug.Log(worldPoint);
+            CreateObject(worldPoint);
         }
     }
 
-
+    // Moves the given RectTransform from its current position 
+    // to the target position
     public IEnumerator Coroutine_MoveUIElement(
         RectTransform r, 
         Vector2 targetPosition, 
@@ -100,6 +123,7 @@ public class DragUIItem :
         r.localPosition = targetPosition;
     }
 
+    // Instantiates the prefab at the given position
     public void CreateObject(Vector3 position)
     {
         if (PrefabToInstantiate == null)
@@ -111,5 +135,6 @@ public class DragUIItem :
         PrefabToInstantiate, 
         position, 
         Quaternion.identity);
+        Debug.Log(obj.transform.position);
     }
 }
