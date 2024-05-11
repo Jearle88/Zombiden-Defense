@@ -24,6 +24,8 @@ public class ZombiePathfinding : MonoBehaviour
         {
             if (m_CurrentWaypointIndex + 1 == waypoints.Length)
             {
+                GameObject player = GameObject.Find("Player");
+                player.GetComponent<playerhealth>().Health -= 1;
                 gameObject.SetActive(false);
             }
             else
