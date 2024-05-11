@@ -6,15 +6,23 @@ using UnityEngine.AI;
 public class ZombiePathfinding : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;
-    public Transform[] waypoints;
+    private Transform Waypointlist;
+    private Transform currWaypoint;
+    private GameObject player;
+    public float DamageDealt;
 
     int m_CurrentWaypointIndex;
+    int m_MaxWaypointIndex;
 
     // used assignment 2 ghost pathfinding script as a base
     void Start()
     {
         // sets first destination to the first waypoint
-        navMeshAgent.SetDestination(waypoints[0].position);
+        Waypointlist = GameObject.Find("Waypoints").transform;
+        currWaypoint = Waypointlist.GetChild(0).gameObject.transform;
+        m_MaxWaypointIndex = Waypointlist.childCount;
+
+        navMeshAgent.SetDestination(currWaypoint.position);
     }
 
     void Update()
@@ -22,16 +30,18 @@ public class ZombiePathfinding : MonoBehaviour
         // checks if the remaining distance is less than that of the given stopping distance and checks that the current index will not go above the max distance of the transform array
         if ((navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance))
         {
-            if (m_CurrentWaypointIndex + 1 == waypoints.Length)
+            if (m_CurrentWaypointIndex + 1 == m_MaxWaypointIndex)
             {
+                // Finds the player GameObject and decreases health
                 GameObject player = GameObject.Find("Player");
-                player.GetComponent<playerhealth>().Health -= 1;
+                player.GetComponent<playerdata>().currHealth -= DamageDealt;
                 gameObject.SetActive(false);
             }
             else
             {
                 m_CurrentWaypointIndex = m_CurrentWaypointIndex + 1;
-                navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+                currWaypoint = Waypointlist.GetChild(m_CurrentWaypointIndex).gameObject.transform;
+                navMeshAgent.SetDestination(currWaypoint.position);
             }
         }
     }
