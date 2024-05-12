@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 847966740720718037}
   - component: {fileID: 5535566520355831343}
   - component: {fileID: 4835538218199707501}
+  - component: {fileID: 6027609923320981006}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -129,3 +130,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 7
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &6027609923320981006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267992294977489678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0d41bfc1dc24c38980ee53287e1710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 0}
+  sfx1: {fileID: 8300000, guid: c42e440859e1fda4c92facfda2c05c60, type: 3}
+  cooldown: 1.5
+  damage: 1

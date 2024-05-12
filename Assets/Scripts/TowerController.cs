@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TowerController : MonoBehaviour
 {
-    public AudioSource src;
+    private AudioSource src;
     public AudioClip sfx1;
 
     public float cooldown = 1.5f;
@@ -18,6 +18,7 @@ public class TowerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            src = other.GetComponent<AudioSource>();
             StartCoroutine(Targeter(other.gameObject));
         }
     }
@@ -33,13 +34,14 @@ public class TowerController : MonoBehaviour
     private IEnumerator Targeter(GameObject other)
     {
         Dcount = 1;
-        while (Dcount == 1)
+        while (Dcount == 1 && (other.GetComponent<EnemyController>().health != 0))
         {
             src.clip = sfx1;
             src.Play();
             other.GetComponent<EnemyController>().Damage(damage);
             yield return new WaitForSeconds(cooldown);
-        } 
+        }
+        Dcount = 0;
     }
 
 }
