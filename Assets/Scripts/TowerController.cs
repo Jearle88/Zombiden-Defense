@@ -47,7 +47,7 @@ public class TowerController : MonoBehaviour
                 src.Play();
                 foreach (GameObject enemy in enemies)
                 {
-                    if (enemy.GetComponent<EnemyController>().health == 0)
+                    if (enemy.GetComponent<EnemyController>().health <= 0)
                     {
                         inRange--;
                     }
