@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (health == 0)
+        if (health <= 0)
         {
             GameObject player = GameObject.Find("Player");
             player.GetComponent<playerdata>().currMoney += MoneyDealt;
