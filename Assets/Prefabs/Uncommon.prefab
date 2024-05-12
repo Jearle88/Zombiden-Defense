@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4158483768937163091}
   - component: {fileID: 2584706676400539324}
   m_Layer: 0
-  m_Name: Tower 1
+  m_Name: Uncommon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   src: {fileID: 2584706676400539324}
   sfx1: {fileID: 8300000, guid: c42e440859e1fda4c92facfda2c05c60, type: 3}
   cooldown: 1.5
-  damage: 1
+  damage: 2
 --- !u!82 &2584706676400539324
 AudioSource:
   m_ObjectHideFlags: 0
