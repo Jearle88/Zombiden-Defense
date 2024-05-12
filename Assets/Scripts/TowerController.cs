@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TowerController : MonoBehaviour
 {
-    private AudioSource src;
+    public AudioSource src;
     public AudioClip sfx1;
 
     public float cooldown = 1.5f;
@@ -18,7 +18,6 @@ public class TowerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            src = other.GetComponent<AudioSource>();
             StartCoroutine(Targeter(other.gameObject));
         }
     }

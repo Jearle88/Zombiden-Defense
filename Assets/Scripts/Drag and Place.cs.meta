@@ -3,7 +3,10 @@ guid: 5dede64fb0020aa408559758677e7910
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PrefabToInstantiate: {fileID: 8939688613734405775, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
+  - UIDragElement: {instanceID: 0}
+  - Canvas: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
