@@ -6,6 +6,8 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
     [SerializeField] private GameObject spawnPoint;
+    [SerializeField]
+    GameObject PrefabToInstantiate;
 
     public Wave[] waves;
     public int currentWaveIndex = 0;
@@ -18,62 +20,77 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waves.Length; i++)
         {
             Debug.Log("AHHHHH");
-            waves[i].enemiesLeft = waves[i].enemies.Length;
+            waves[i].enemiesLeft = waves[i].numEnemies;
         }
     }
     private void Update()
     {
         if (currentWaveIndex >= waves.Length)
-    {
-        Debug.Log("You survived every wave!");
-        return;
-    }
+        {
+            Debug.Log("You survived every wave!");
+            return;
+        }
 
-    if (readyToCountDown)
-    {
-        countdown -= Time.deltaTime;
-    }
+        if (readyToCountDown)
+        {
+            countdown -= Time.deltaTime;
+            Debug.Log(countdown);
+        }
 
-    if (countdown <= 0)
-    {
-       // Debug.Log("COUNTDOWN");
-        readyToCountDown = false;
+        if (countdown <= 0)
+        {
+           // Debug.Log("COUNTDOWN");
+            readyToCountDown = false;
 
-        countdown = waves[currentWaveIndex].timeToNextWave;
+            countdown = waves[currentWaveIndex].timeToNextWave;
 
-        StartCoroutine(SpawnWave());
-         Debug.Log("COUNTDOWN");
-    }
+            StartCoroutine(SpawnWave());
+             Debug.Log("COUNTDOWN");
+        }
 
-    if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
-    {
-        readyToCountDown = true;
+        if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
+        {
+            readyToCountDown = true;
 
-        currentWaveIndex++;
-    }
+            currentWaveIndex++;
+        }
     }
     private IEnumerator SpawnWave()
     {
         if (currentWaveIndex < waves.Length)
         {
            Debug.Log("wave index"+ currentWaveIndex);
-            for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
+            for (int i = 0; i < waves[currentWaveIndex].numEnemies; i++)
             {
                 Debug.Log("WAVVVESSS");
-                Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+                CreateObject(spawnPoint.transform.position);
+                // Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
                 //waves[currentWaveIndex].enemiesLeft--;
-                enemy.transform.SetParent(spawnPoint.transform);
+                // enemy.transform.SetParent(spawnPoint.transform);
 
                 yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
             }
         }
+    }
+    public void CreateObject(Vector3 position)
+    {
+        if (PrefabToInstantiate == null)
+        {
+            Debug.Log("No prefab to instantiate");
+            return;
+        }
+        GameObject obj = Instantiate(
+        PrefabToInstantiate,
+        position,
+        Quaternion.identity);
+        Debug.Log(obj.transform.position);
     }
 }
 
 [System.Serializable]
 public class Wave
 {
-    public Enemy[] enemies;
+    public int numEnemies;
     public float timeToNextEnemy;
     public float timeToNextWave;
 
