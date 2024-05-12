@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class playerdata : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class playerdata : MonoBehaviour
     public float currMoney;
     private float maxHealth;
     public TextMeshProUGUI healthGUI;
-
 
     // Start is called before the first frame update
     void Start()
@@ -28,5 +28,9 @@ public class playerdata : MonoBehaviour
     void Update()
     {
         healthGUI.text = "Health: " + currHealth.ToString() + "/" + maxHealth.ToString() + "\n" + "Money: $" + currMoney;
+        if (currHealth < 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public GameObject enemy;
-    public int health = 5;
+    public float health = 5;
     public float MoneyDealt = 10;
 
     public void Damage(int damage)
