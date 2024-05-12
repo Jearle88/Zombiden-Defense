@@ -129,7 +129,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2.6963577
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4158483768937163091
 MonoBehaviour:
@@ -145,8 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 2584706676400539324}
   sfx1: {fileID: 8300000, guid: 9efcdfc3093cfae4693bcf7c452610fe, type: 3}
-  cooldown: 1.5
-  damage: 4
+  cooldown: 4
+  damage: 5
 --- !u!82 &2584706676400539324
 AudioSource:
   m_ObjectHideFlags: 0
