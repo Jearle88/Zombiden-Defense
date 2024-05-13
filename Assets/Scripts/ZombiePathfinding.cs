@@ -35,6 +35,9 @@ public class ZombiePathfinding : MonoBehaviour
                 // Finds the player GameObject and decreases health
                 GameObject player = GameObject.Find("Player");
                 player.GetComponent<playerdata>().currHealth -= DamageDealt;
+                GameObject spawner = GameObject.Find("Ground");
+                int currentWaveIndex = spawner.GetComponent<WaveSpawner>().currentWaveIndex;
+                spawner.GetComponent<WaveSpawner>().waves[currentWaveIndex].enemiesLeft -= 1;
                 gameObject.SetActive(false);
             }
             else

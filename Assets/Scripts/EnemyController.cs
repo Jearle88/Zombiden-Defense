@@ -19,6 +19,9 @@ public class EnemyController : MonoBehaviour
         {
             GameObject player = GameObject.Find("Player");
             player.GetComponent<playerdata>().currMoney += MoneyDealt;
+            GameObject spawner = GameObject.Find("Ground");
+            int currentWaveIndex = spawner.GetComponent<WaveSpawner>().currentWaveIndex;
+            spawner.GetComponent<WaveSpawner>().waves[currentWaveIndex].enemiesLeft -= 1;
             enemy.SetActive(false);
         }
     }
