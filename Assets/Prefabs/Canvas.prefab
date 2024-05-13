@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 50
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: a6857e11dcee76c4cb614bd6831c6608, type: 3}
   UIDragElement: {fileID: 5413559518348961204}
   Canvas: {fileID: 5453501178235138556}
@@ -666,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 40
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: e2d54fe45f9a99642806fc0c6ae0535f, type: 3}
   UIDragElement: {fileID: 8321947666505773998}
   Canvas: {fileID: 5453501178235138556}
@@ -833,6 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 10
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
   UIDragElement: {fileID: 4067419452601373698}
   Canvas: {fileID: 5453501178235138556}
@@ -924,6 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 10
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
   UIDragElement: {fileID: 5258826079925901088}
   Canvas: {fileID: 5453501178235138556}
@@ -1015,6 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 20
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: 74fbf091bb21c3c4693a62435a29a796, type: 3}
   UIDragElement: {fileID: 6244225158088365451}
   Canvas: {fileID: 5453501178235138556}
@@ -1182,6 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dede64fb0020aa408559758677e7910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 30
   PrefabToInstantiate: {fileID: 8939688613734405775, guid: 2016e6135ff664346b1e2b220a931ffc, type: 3}
   UIDragElement: {fileID: 7583096855721771349}
   Canvas: {fileID: 5453501178235138556}
