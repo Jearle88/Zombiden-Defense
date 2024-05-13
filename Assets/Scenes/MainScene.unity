@@ -2187,6 +2187,10 @@ PrefabInstance:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 400198985}
+    - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
+      propertyPath: startingMoney
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
