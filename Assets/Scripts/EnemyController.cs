@@ -8,6 +8,10 @@ public class EnemyController : MonoBehaviour
     public float health = 5;
     public float MoneyDealt = 10;
 
+    public AudioSource src;
+    public AudioClip sfx1;
+
+
     public void Damage(int damage)
     {
         health -= damage;
@@ -17,6 +21,10 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0)
         {
+            
+            src.clip = sfx1;
+            src.Play();
+
             GameObject player = GameObject.Find("Player");
             player.GetComponent<playerdata>().currMoney += MoneyDealt;
             GameObject spawner = GameObject.Find("Ground");

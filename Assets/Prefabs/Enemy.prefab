@@ -152,6 +152,8 @@ MonoBehaviour:
   enemy: {fileID: 1908410747948406852}
   health: 4
   MoneyDealt: 10
+  src: {fileID: 0}
+  sfx1: {fileID: 8300000, guid: 1d0d521ff98a26c42a8a94f06e9450aa, type: 3}
 --- !u!114 &4931895095585415927
 MonoBehaviour:
   m_ObjectHideFlags: 0
