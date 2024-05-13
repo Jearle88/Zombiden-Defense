@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -895,6 +895,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102b5e4fc06e3f2459fcf7a8319c8f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &767417897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_Name
+      value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755060512712479683, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
 --- !u!1 &810470905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,13 +1421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 977674777}
-  waypoints:
-  - {fileID: 286702225}
-  - {fileID: 542194069}
-  - {fileID: 2013017818}
-  - {fileID: 1040131085}
-  - {fileID: 2109315568}
-  - {fileID: 1994666954}
+  DamageDealt: 0
 --- !u!114 &977674779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,12 +1435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 977674776}
-  src: {fileID: 977674785}
-  sfx1: {fileID: 8300000, guid: 27f6f1a7e754c415c9a8b45e0aecc60b, type: 3}
-  sfx2: {fileID: 8300000, guid: 27f6f1a7e754c415c9a8b45e0aecc60b, type: 3}
-  cooldown: 1.5
   health: 6
-  Dcount: 0
+  MoneyDealt: 10
 --- !u!54 &977674780
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2380,3 +2427,4 @@ SceneRoots:
   - {fileID: 313266339}
   - {fileID: 536138085}
   - {fileID: 539000239}
+  - {fileID: 767417897}
