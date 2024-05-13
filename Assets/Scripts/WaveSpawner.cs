@@ -33,7 +33,8 @@ public class WaveSpawner : MonoBehaviour
         {
             Debug.Log("You survived every wave!");
             timerGUI.text = "You Win!";
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameObject player = GameObject.Find("Player");
+            player.GetComponent<playerdata>().EndLevel();
         }
 
         if (readyToCountDown)
@@ -55,12 +56,15 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("COUNTDOWN");
         }
 
-        if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
+        if(currentWaveIndex < waves.Length)
         {
-            currentWaveIndex++;
-            if (currentWaveIndex < waves.Length)
+            if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
             {
-                readyToCountDown = true;
+                currentWaveIndex++;
+                if (currentWaveIndex < waves.Length)
+                {
+                    readyToCountDown = true;
+                }
             }
         }
     }

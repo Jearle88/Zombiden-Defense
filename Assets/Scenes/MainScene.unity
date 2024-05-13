@@ -1023,6 +1023,10 @@ MonoBehaviour:
     timeToNextEnemy: 2
     timeToNextWave: 5
     enemiesLeft: 0
+  - numEnemies: 40
+    timeToNextEnemy: 1
+    timeToNextWave: 5
+    enemiesLeft: 0
   currentWaveIndex: 0
 --- !u!1 &810470905
 GameObject:
@@ -1856,6 +1860,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4647509320427513729, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2321,6 +2349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
+      propertyPath: timerGUI
+      value: 
+      objectReference: {fileID: 1253713127}
     - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
       propertyPath: healthGUI
       value: 

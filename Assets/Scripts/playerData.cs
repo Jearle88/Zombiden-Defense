@@ -14,6 +14,8 @@ public class playerdata : MonoBehaviour
     [System.NonSerialized]
     public float currMoney;
     private float maxHealth;
+    private float displayGui = 5f;
+    private float timer;
     public TextMeshProUGUI healthGUI;
     public TextMeshProUGUI timerGUI;
 
@@ -32,6 +34,17 @@ public class playerdata : MonoBehaviour
         if (currHealth < 1)
         {
             timerGUI.text = "You Lose";
+            EndLevel();
+        }
+    }
+
+    public void EndLevel()
+    {
+        timer += Time.deltaTime;
+
+
+        if (timer > displayGui)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
