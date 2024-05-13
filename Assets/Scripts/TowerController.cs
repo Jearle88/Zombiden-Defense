@@ -23,6 +23,7 @@ public class TowerController : MonoBehaviour
         {
             enemies.Add(other.gameObject);
             StartCoroutine(Targeter());
+            Debug.Log(inRange);
         }
     }
 
@@ -30,7 +31,10 @@ public class TowerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            inRange--;
+            if (inRange > 0)
+            {
+                inRange--;
+            }
             enemies.Remove(other.gameObject);
         }
     }
@@ -49,7 +53,10 @@ public class TowerController : MonoBehaviour
                 {
                     if (enemy.GetComponent<EnemyController>().health <= 0)
                     {
-                        inRange--;
+                        if (inRange > 0)
+                        {
+                            inRange--;
+                        }
                     }
                     else
                         enemy.GetComponent<EnemyController>().Damage(damage);
