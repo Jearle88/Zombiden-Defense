@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using System;
+using UnityEngine.SceneManagement;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
@@ -28,7 +29,7 @@ public class WaveSpawner : MonoBehaviour
         if (currentWaveIndex >= waves.Length)
         {
             Debug.Log("You survived every wave!");
-            return;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (readyToCountDown)
@@ -45,7 +46,7 @@ public class WaveSpawner : MonoBehaviour
             countdown = waves[currentWaveIndex].timeToNextWave;
 
             StartCoroutine(SpawnWave());
-             Debug.Log("COUNTDOWN");
+            Debug.Log("COUNTDOWN");
         }
 
         if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
