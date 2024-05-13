@@ -15,6 +15,7 @@ public class playerdata : MonoBehaviour
     public float currMoney;
     private float maxHealth;
     public TextMeshProUGUI healthGUI;
+    public TextMeshProUGUI timerGUI;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class playerdata : MonoBehaviour
         healthGUI.text = "Health: " + currHealth.ToString() + "/" + maxHealth.ToString() + "\n" + "Money: $" + currMoney;
         if (currHealth < 1)
         {
+            timerGUI.text = "You Lose";
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

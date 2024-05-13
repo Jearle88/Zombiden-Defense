@@ -3,12 +3,15 @@ using System.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
     [SerializeField] private GameObject spawnPoint;
     [SerializeField]
     GameObject PrefabToInstantiate;
+    public TextMeshProUGUI timerGUI;
 
     public Wave[] waves;
     public int currentWaveIndex = 0;
@@ -29,18 +32,21 @@ public class WaveSpawner : MonoBehaviour
         if (currentWaveIndex >= waves.Length)
         {
             Debug.Log("You survived every wave!");
+            timerGUI.text = "You Win!";
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (readyToCountDown)
         {
+            timerGUI.text = "Time To Next Wave: " + countdown.ToString();
             countdown -= Time.deltaTime;
             Debug.Log(countdown);
         }
 
         if (countdown <= 0)
         {
-           // Debug.Log("COUNTDOWN");
+            // Debug.Log("COUNTDOWN");
+            timerGUI.text = "Time To Next Wave: " + 0;
             readyToCountDown = false;
 
             countdown = waves[currentWaveIndex].timeToNextWave;
@@ -51,9 +57,11 @@ public class WaveSpawner : MonoBehaviour
 
         if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
         {
-            readyToCountDown = true;
-
             currentWaveIndex++;
+            if (currentWaveIndex < waves.Length)
+            {
+                readyToCountDown = true;
+            }
         }
     }
     private IEnumerator SpawnWave()
@@ -73,6 +81,7 @@ public class WaveSpawner : MonoBehaviour
             }
         }
     }
+
     public void CreateObject(Vector3 position)
     {
         if (PrefabToInstantiate == null)
