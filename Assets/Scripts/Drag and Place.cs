@@ -9,6 +9,9 @@ public class DragUIItem :
   IDragHandler, 
   IEndDragHandler
 {
+    private GameObject player;
+
+    public int cost;
     // prefab to create when you drag and drop from the UI element
     [SerializeField]
     GameObject PrefabToInstantiate;
@@ -97,7 +100,12 @@ public class DragUIItem :
 
 
             Debug.Log(worldPoint);
-            CreateObject(worldPoint);
+            GameObject player = GameObject.Find("Player");
+            if (player.GetComponent<playerdata>().currMoney >= cost)
+            {
+                CreateObject(worldPoint);
+                player.GetComponent<playerdata>().currMoney -= cost;
+            }
         }
     }
 
