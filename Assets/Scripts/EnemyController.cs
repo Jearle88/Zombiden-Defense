@@ -21,10 +21,6 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0)
         {
-            
-            src.clip = sfx1;
-            src.Play();
-
             GameObject player = GameObject.Find("Player");
             player.GetComponent<playerdata>().currMoney += MoneyDealt;
             GameObject spawner = GameObject.Find("Ground");
