@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 2584706676400539324}
-  sfx1: {fileID: 8300000, guid: 513cd9e3c2525bd488d9193deb997404, type: 3}
+  sfx1: {fileID: 8300000, guid: c94717ba3b00f2c419fe67df027e547c, type: 3}
   cooldown: 1.5
   damage: 1
 --- !u!82 &2584706676400539324
