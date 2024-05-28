@@ -3,7 +3,12 @@ guid: 3518f3576d341644190079c26db3bde8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
+  - sfx1: {instanceID: 0}
+  - spawnPoint: {instanceID: 0}
+  - PrefabToInstantiate: {instanceID: 0}
+  - timerGUI: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

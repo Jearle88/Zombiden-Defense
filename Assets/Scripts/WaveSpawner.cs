@@ -7,6 +7,8 @@ using UnityEngine.UI;
 using TMPro;
 public class WaveSpawner : MonoBehaviour
 {
+    public AudioSource src;
+    public AudioClip sfx1;
     [SerializeField] private float countdown;
     [SerializeField] private GameObject spawnPoint;
     [SerializeField]
@@ -19,6 +21,8 @@ public class WaveSpawner : MonoBehaviour
     private bool readyToCountDown;
     private void Start()
     {
+        src.clip = sfx1;
+        src.Play();
         readyToCountDown = true;
 
         for (int i = 0; i < waves.Length; i++)

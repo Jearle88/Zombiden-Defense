@@ -8,8 +8,6 @@ public class EnemyController : MonoBehaviour
     public float health = 5;
     public float MoneyDealt = 10;
 
-    public AudioSource src;
-    public AudioClip sfx1;
 
 
     public void Damage(int damage)

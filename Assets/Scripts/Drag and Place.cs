@@ -9,6 +9,9 @@ public class DragUIItem :
   IDragHandler, 
   IEndDragHandler
 {
+    public AudioSource src;
+    public AudioClip sfx1;
+
     private GameObject player;
 
     public int cost;
@@ -46,9 +49,9 @@ public class DragUIItem :
         data.position, 
         data.pressEventCamera, 
         out mOriginalLocalPointerPosition);
-        Debug.Log("mOriginalLocalPointerPosition: " + mOriginalLocalPointerPosition + 
-            "\nmOriginalPanelLocalPosition: " + mOriginalPanelLocalPosition + 
-            "\nmOriginalPosition: " + mOriginalPosition);
+
+        src.clip = sfx1;
+        src.Play();
     }
 
     // Called while drag is happening. Calculates the offset between 
@@ -75,7 +78,6 @@ public class DragUIItem :
         Ray ray = Camera.main.ScreenPointToRay(
         Input.mousePosition);
 
-        Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red);
     }
 
     // Called when drag ends. Performs a raycast from
@@ -99,7 +101,6 @@ public class DragUIItem :
             Vector3 worldPoint = hit.point;
 
 
-            Debug.Log(worldPoint);
             GameObject player = GameObject.Find("Player");
             if (player.GetComponent<playerdata>().currMoney >= cost)
             {
@@ -143,6 +144,5 @@ public class DragUIItem :
         PrefabToInstantiate, 
         position, 
         Quaternion.identity);
-        Debug.Log(obj.transform.position);
     }
 }
