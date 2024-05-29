@@ -2097,6 +2097,10 @@ PrefabInstance:
       propertyPath: sfx1
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2676433954844556895, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: PrefabToInstantiate
+      value: 
+      objectReference: {fileID: 8939688613734405775, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
     - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -2125,6 +2129,10 @@ PrefabInstance:
       propertyPath: src
       value: 
       objectReference: {fileID: 9168018866639478126, guid: 5da21e163bc501a4ebea87fdd267587f, type: 3}
+    - target: {fileID: 4303946070134973614, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: PrefabToInstantiate
+      value: 
+      objectReference: {fileID: 8939688613734405775, guid: 74fbf091bb21c3c4693a62435a29a796, type: 3}
     - target: {fileID: 4647509320427513729, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Name
       value: Canvas
