@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 894707347572871576}
   - component: {fileID: 5821427103408087203}
   - component: {fileID: -2813986735270529577}
-  - component: {fileID: 2844348378100126993}
   - component: {fileID: 7021148193862654665}
   - component: {fileID: -3403170205094698446}
   m_Layer: 0
@@ -216,22 +215,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2844348378100126993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759267149518445698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a0d41bfc1dc24c38980ee53287e1710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 7021148193862654665}
-  sfx1: {fileID: 8300000, guid: 0d22567d55d35ec4abbf8945abf2b234, type: 3}
-  cooldown: 4
-  damage: 5
 --- !u!82 &7021148193862654665
 AudioSource:
   m_ObjectHideFlags: 0
