@@ -168,7 +168,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 50
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: a6857e11dcee76c4cb614bd6831c6608, type: 3}
+  PrefabToInstantiate: {fileID: 1473760857589215377, guid: 91aba07c5ab65b04d95a0e0b033f2104, type: 3}
   UIDragElement: {fileID: 5413559518348961204}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &3041315069612460419
@@ -948,7 +948,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 40
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: e2d54fe45f9a99642806fc0c6ae0535f, type: 3}
+  PrefabToInstantiate: {fileID: 3759267149518445698, guid: b0a71be3b77dd0841bca26eff4351edb, type: 3}
   UIDragElement: {fileID: 8321947666505773998}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &7695486242857351325
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 10
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
+  PrefabToInstantiate: {fileID: 919132149155446097, guid: 47db99b44dfd1be4da98e2fccc2c5e6c, type: 3}
   UIDragElement: {fileID: 5258826079925901088}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &8224244381328265985
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 20
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: 74fbf091bb21c3c4693a62435a29a796, type: 3}
+  PrefabToInstantiate: {fileID: 5070018818832400629, guid: 121f8a58111982f44b9e27322c65c11a, type: 3}
   UIDragElement: {fileID: 6244225158088365451}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &8647719434920391281
@@ -1713,6 +1713,6 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 30
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: 2016e6135ff664346b1e2b220a931ffc, type: 3}
+  PrefabToInstantiate: {fileID: 5035548599699943980, guid: 39e8a8a1953b41c4f90d947540ab1be6, type: 3}
   UIDragElement: {fileID: 7583096855721771349}
   Canvas: {fileID: 5453501178235138556}

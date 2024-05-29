@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1890,11 +1890,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3518f3576d341644190079c26db3bde8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   src: {fileID: 711229564}
+=======
+  src: {fileID: 0}
+>>>>>>> Stashed changes
   sfx1: {fileID: 8300000, guid: 9049176eb63d5344bb2476cac820f117, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
-  PrefabToInstantiate: {fileID: 1908410747948406852, guid: 8dbeca3527b454c2b82e4a89d7413230, type: 3}
+  PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
   timerGUI: {fileID: 1253713127}
   waves:
   - numEnemies: 10
