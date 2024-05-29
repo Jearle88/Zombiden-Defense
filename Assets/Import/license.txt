@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wasington Monument
+* source:	https://sketchfab.com/3d-models/wasington-monument-a24e0ecb61c44db9a848f8e99b12948b
+* author:	wareFLO (https://sketchfab.com/wareFLO)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wasington Monument" (https://sketchfab.com/3d-models/wasington-monument-a24e0ecb61c44db9a848f8e99b12948b) by wareFLO (https://sketchfab.com/wareFLO) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
