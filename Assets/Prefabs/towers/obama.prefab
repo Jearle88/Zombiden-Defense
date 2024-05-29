@@ -128,7 +128,11 @@ GameObject:
   - component: {fileID: 5821427103408087203}
   - component: {fileID: -2813986735270529577}
   - component: {fileID: 7021148193862654665}
+<<<<<<< Updated upstream
   - component: {fileID: -3403170205094698446}
+=======
+  - component: {fileID: -8203312488070808077}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: obama
   m_TagString: Untagged
@@ -311,7 +315,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+<<<<<<< Updated upstream
 --- !u!114 &-3403170205094698446
+=======
+--- !u!114 &-8203312488070808077
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,7 +332,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 7021148193862654665}
+<<<<<<< Updated upstream
   sfx1: {fileID: 8300000, guid: 0d22567d55d35ec4abbf8945abf2b234, type: 3}
+=======
+  sfx1: {fileID: 0}
+>>>>>>> Stashed changes
   cooldown: 4
   damage: 5
   min: 0
