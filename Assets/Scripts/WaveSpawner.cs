@@ -60,15 +60,13 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("COUNTDOWN");
         }
 
-        if(currentWaveIndex < waves.Length)
+        if (waves[currentWaveIndex].enemiesLeft <= 0) // Add the condition here
         {
-            if (waves[currentWaveIndex].enemiesLeft == 0) // Add the condition here
+            StopAllCoroutines();
+            currentWaveIndex++;
+            if (currentWaveIndex < waves.Length)
             {
-                currentWaveIndex++;
-                if (currentWaveIndex < waves.Length)
-                {
-                    readyToCountDown = true;
-                }
+                readyToCountDown = true;
             }
         }
     }
