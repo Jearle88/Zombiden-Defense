@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -7,8 +9,7 @@ public class EnemyController : MonoBehaviour
     public GameObject enemy;
     public float health = 5;
     public float MoneyDealt = 10;
-
-
+    public float timer;
 
     public void Damage(int damage)
     {
@@ -26,6 +27,7 @@ public class EnemyController : MonoBehaviour
             spawner.GetComponent<WaveSpawner>().waves[currentWaveIndex].enemiesLeft -= 1;
             enemy.SetActive(false);
         }
+        timer += Time.deltaTime;
     }
 
 }
