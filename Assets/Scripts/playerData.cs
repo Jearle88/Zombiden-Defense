@@ -45,7 +45,7 @@ public class playerdata : MonoBehaviour
 
         if (timer > displayGui)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Menu");
         }
     }
 }
