@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -179,7 +179,7 @@ Transform:
   m_GameObject: {fileID: 841054}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2, y: 0, z: 9.5}
+  m_LocalPosition: {x: 4.3, y: 0, z: 9.5}
   m_LocalScale: {x: 1.5, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1015,8 +1015,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2080,25 +2080,97 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: 9049176eb63d5344bb2476cac820f117, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
-  PrefabToInstantiate: {fileID: 1908410747948406852, guid: 8dbeca3527b454c2b82e4a89d7413230, type: 3}
+  PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
   timerGUI: {fileID: 1253713127}
   waves:
   - numEnemies: 10
-    extraHealth: 0
-    extraSpeed: 0
+    extraHealth: 2
+    extraSpeed: 1
     timeToNextEnemy: 2
     timeToNextWave: 5
     enemiesLeft: 0
   - numEnemies: 20
-    extraHealth: 0
-    extraSpeed: 0
+    extraHealth: 5
+    extraSpeed: 4
     timeToNextEnemy: 2
     timeToNextWave: 5
     enemiesLeft: 0
   - numEnemies: 40
-    extraHealth: 0
-    extraSpeed: 0
+    extraHealth: 7
+    extraSpeed: 6
     timeToNextEnemy: 1
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 80
+    extraHealth: 10
+    extraSpeed: 7
+    timeToNextEnemy: 0.5
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 2
+    extraHealth: 250
+    extraSpeed: -1
+    timeToNextEnemy: 20
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 100
+    extraHealth: 11
+    extraSpeed: 8
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 125
+    extraHealth: 13
+    extraSpeed: 9
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 150
+    extraHealth: 15
+    extraSpeed: 10
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 175
+    extraHealth: 16
+    extraSpeed: 11
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 4
+    extraHealth: 300
+    extraSpeed: 1
+    timeToNextEnemy: 10
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 200
+    extraHealth: 17
+    extraSpeed: 12
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 225
+    extraHealth: 18
+    extraSpeed: 13
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 250
+    extraHealth: 19
+    extraSpeed: 14
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 275
+    extraHealth: 20
+    extraSpeed: 15
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 6
+    extraHealth: 400
+    extraSpeed: 3
+    timeToNextEnemy: 10
     timeToNextWave: 5
     enemiesLeft: 0
   currentWaveIndex: 0
@@ -3184,8 +3256,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

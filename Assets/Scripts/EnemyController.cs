@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public GameObject enemy;
+   // public GameObject enemy;
     public float health = 5;
     public float MoneyDealt = 10;
     public float timer;
@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
             GameObject spawner = GameObject.Find("Ground");
             int currentWaveIndex = spawner.GetComponent<WaveSpawner>().currentWaveIndex;
             spawner.GetComponent<WaveSpawner>().waves[currentWaveIndex].enemiesLeft -= 1;
-            enemy.SetActive(false);
+            gameObject.SetActive(false);
         }
         timer += Time.deltaTime;
     }

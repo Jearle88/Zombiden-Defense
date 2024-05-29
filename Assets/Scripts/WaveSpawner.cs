@@ -54,7 +54,7 @@ public class WaveSpawner : MonoBehaviour
         if (countdown <= 0)
         {
             // Debug.Log("COUNTDOWN");
-            timerGUI.text = "Time To Next Wave: " + 0;
+            timerGUI.text = "Waves: " + (currentWaveIndex+1).ToString() + "/" + waves.Length;
             readyToCountDown = false;
 
             countdown = waves[currentWaveIndex].timeToNextWave;

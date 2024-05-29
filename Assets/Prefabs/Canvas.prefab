@@ -948,7 +948,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 40
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: e2d54fe45f9a99642806fc0c6ae0535f, type: 3}
+  PrefabToInstantiate: {fileID: 3759267149518445698, guid: d58fcc4e57bdd054281aa3710a35d372, type: 3}
   UIDragElement: {fileID: 8321947666505773998}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &7695486242857351325

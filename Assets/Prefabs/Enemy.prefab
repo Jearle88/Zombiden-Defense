@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4931895095585415927}
   - component: {fileID: 8709100806257359464}
   - component: {fileID: 1608655781378413647}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ NavMeshAgent:
   m_Acceleration: 16
   avoidancePriority: 50
   m_AngularSpeed: 360
-  m_StoppingDistance: 0.3
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -199,9 +199,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a55ce9c7e428cb742a25569041318235, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.519
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
