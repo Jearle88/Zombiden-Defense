@@ -54,7 +54,7 @@ public class TowerController : MonoBehaviour
     }
     private void Update()
     {
-        foreach(GameObject enemy in enemies) {
+        foreach(GameObject enemy in enemies.ToList()) {
             if (enemy.GetComponent<EnemyController>().health <= 0)
             {
                 enemies.Remove(enemy);

@@ -1120,15 +1120,27 @@ MonoBehaviour:
   timerGUI: {fileID: 1253713127}
   waves:
   - numEnemies: 10
+    extraHealth: 0
+    extraSpeed: 0
     timeToNextEnemy: 2
     timeToNextWave: 5
     enemiesLeft: 0
   - numEnemies: 20
+    extraHealth: 3
+    extraSpeed: 3
     timeToNextEnemy: 2
     timeToNextWave: 5
     enemiesLeft: 0
   - numEnemies: 40
+    extraHealth: 5
+    extraSpeed: 5
     timeToNextEnemy: 1
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - numEnemies: 80
+    extraHealth: 8
+    extraSpeed: 6
+    timeToNextEnemy: 0.5
     timeToNextWave: 5
     enemiesLeft: 0
   currentWaveIndex: 0

@@ -5,6 +5,8 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.AI;
+
 public class WaveSpawner : MonoBehaviour
 {
     public AudioSource src;
@@ -21,6 +23,7 @@ public class WaveSpawner : MonoBehaviour
     private bool readyToCountDown;
     private void Start()
     {
+        currentWaveIndex = 0;
         src.clip = sfx1;
         src.Play();
         readyToCountDown = true;
@@ -59,14 +62,16 @@ public class WaveSpawner : MonoBehaviour
             StartCoroutine(SpawnWave());
             Debug.Log("COUNTDOWN");
         }
-
-        if (waves[currentWaveIndex].enemiesLeft <= 0) // Add the condition here
+        if (currentWaveIndex < waves.Length)
         {
-            StopAllCoroutines();
-            currentWaveIndex++;
-            if (currentWaveIndex < waves.Length)
+            if (waves[currentWaveIndex].enemiesLeft <= 0) // Add the condition here
             {
-                readyToCountDown = true;
+                StopAllCoroutines();
+                currentWaveIndex++;
+                if (currentWaveIndex < waves.Length)
+                {
+                    readyToCountDown = true;
+                }
             }
         }
     }
@@ -78,7 +83,7 @@ public class WaveSpawner : MonoBehaviour
             for (int i = 0; i < waves[currentWaveIndex].numEnemies; i++)
             {
                 Debug.Log("WAVVVESSS");
-                CreateObject(spawnPoint.transform.position);
+                CreateObject(spawnPoint.transform.position, waves[currentWaveIndex].extraHealth, waves[currentWaveIndex].extraSpeed);
                 // Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
                 //waves[currentWaveIndex].enemiesLeft--;
                 // enemy.transform.SetParent(spawnPoint.transform);
@@ -88,7 +93,7 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    public void CreateObject(Vector3 position)
+    public void CreateObject(Vector3 position, int addHealth, float addSpeed)
     {
         if (PrefabToInstantiate == null)
         {
@@ -99,6 +104,8 @@ public class WaveSpawner : MonoBehaviour
         PrefabToInstantiate,
         position,
         Quaternion.identity);
+        obj.GetComponent<EnemyController>().health += addHealth;
+        obj.GetComponent<NavMeshAgent>().speed += addSpeed;
         Debug.Log(obj.transform.position);
     }
 }
@@ -107,6 +114,8 @@ public class WaveSpawner : MonoBehaviour
 public class Wave
 {
     public int numEnemies;
+    public int extraHealth = 0;
+    public float extraSpeed = 0.0f;
     public float timeToNextEnemy;
     public float timeToNextWave;
 
