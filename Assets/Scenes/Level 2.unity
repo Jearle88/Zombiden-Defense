@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1331,13 +1331,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 711229564}
-  sfx1: {fileID: 8300000, guid: 9049176eb63d5344bb2476cac820f117, type: 3}
+  sfx1: {fileID: 8300000, guid: 52ac80742066d324c84d94978fed5197, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
-  PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
+  PrefabToInstantiate: {fileID: 1908410747948406852, guid: 8dbeca3527b454c2b82e4a89d7413230, type: 3}
   timerGUI: {fileID: 1253713127}
   waves:
-  - numEnemies: 1
+  - numEnemies: 10
     extraHealth: 0
     extraSpeed: 0
     timeToNextEnemy: 2
@@ -1366,9 +1366,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9049176eb63d5344bb2476cac820f117, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 52ac80742066d324c84d94978fed5197, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.308
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1897,10 +1897,6 @@ PrefabInstance:
     - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303946070134973614, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
-      propertyPath: PrefabToInstantiate
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4647509320427513729, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Name

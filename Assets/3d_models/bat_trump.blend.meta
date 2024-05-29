@@ -3,17 +3,7 @@ guid: ad78bb25da2c6f541a36c125b036b7b2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Scene_-_Root
-    second: {fileID: 2100000, guid: 7bc6eb9b373e74a548be1f621f18074e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Scene_-_Root.001
-    second: {fileID: 2100000, guid: b25b957bda40218419f684fc131196a6, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
