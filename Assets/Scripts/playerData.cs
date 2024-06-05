@@ -18,10 +18,12 @@ public class playerdata : MonoBehaviour
     private float timer;
     public TextMeshProUGUI healthGUI;
     public TextMeshProUGUI timerGUI;
+    [System.NonSerialized] public bool halo_on;
 
     // Start is called before the first frame update
     void Start()
     {
+        halo_on = false;
         maxHealth = startingHealth;
         currHealth = startingHealth;
         currMoney = startingMoney;

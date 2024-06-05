@@ -78,10 +78,13 @@ PrefabInstance:
       addedObject: {fileID: -7418339884879721336}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 47db99b44dfd1be4da98e2fccc2c5e6c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3679640865294640535}
+      addedObject: {fileID: 132173126750753395}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 47db99b44dfd1be4da98e2fccc2c5e6c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 132173126750753395}
+      addedObject: {fileID: 4645346984471925778}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 47db99b44dfd1be4da98e2fccc2c5e6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791470492709769048}
   m_SourcePrefab: {fileID: 100100000, guid: 47db99b44dfd1be4da98e2fccc2c5e6c, type: 3}
 --- !u!1 &2157256698290114423 stripped
 GameObject:
@@ -151,22 +154,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3679640865294640535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2157256698290114423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a0d41bfc1dc24c38980ee53287e1710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 2584706676400539324, guid: 2016e6135ff664346b1e2b220a931ffc, type: 3}
-  sfx1: {fileID: 8300000, guid: a6c760c6d56edc7429b33ed8c9d3b83e, type: 3}
-  cooldown: 0.5
-  damage: 1
 --- !u!82 &132173126750753395
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,3 +250,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!122 &4645346984471925778
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157256698290114423}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4289627218
+  m_Size: 3
+--- !u!114 &1791470492709769048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157256698290114423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77dd903502a34790a2622bd0e401920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 132173126750753395}
+  sfx1: {fileID: 8300000, guid: a6c760c6d56edc7429b33ed8c9d3b83e, type: 3}
+  cooldown: 1.5
+  damage: 1
+  min: 0
+  halo: {fileID: 4645346984471925778}
