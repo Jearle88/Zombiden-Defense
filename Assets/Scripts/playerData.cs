@@ -36,7 +36,7 @@ public class playerdata : MonoBehaviour
         if (currHealth < 1)
         {
             timerGUI.text = "You Lose";
-            EndLevel();
+            SceneManager.LoadScene("Lose");
         }
     }
 
