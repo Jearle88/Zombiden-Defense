@@ -1397,7 +1397,6 @@ MonoBehaviour:
     timeToNextEnemy: 10
     timeToNextWave: 5
     enemiesLeft: 0
-  currentWaveIndex: 0
 --- !u!82 &711229564
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2051,6 +2050,11 @@ PrefabInstance:
       addedObject: {fileID: 1253713126}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+--- !u!1 &1259969108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3388914041845217311, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+  m_PrefabInstance: {fileID: 1259969107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1336303545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2664,10 @@ PrefabInstance:
       propertyPath: timerGUI
       value: 
       objectReference: {fileID: 1253713127}
+    - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1259969108}
     - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
       propertyPath: healthGUI
       value: 
