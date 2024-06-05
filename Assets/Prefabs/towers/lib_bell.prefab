@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77dd903502a34790a2622bd0e401920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2584706676400539324, guid: 74fbf091bb21c3c4693a62435a29a796, type: 3}
+  src: {fileID: 7854396431728609768}
   sfx1: {fileID: 8300000, guid: 62f47271cac57d845b857d2424747e70, type: 3}
   cooldown: 2
   damage: 2

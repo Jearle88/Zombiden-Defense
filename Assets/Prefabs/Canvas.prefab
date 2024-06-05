@@ -168,7 +168,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 50
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: a6857e11dcee76c4cb614bd6831c6608, type: 3}
+  PrefabToInstantiate: {fileID: 1473760857589215377, guid: 91aba07c5ab65b04d95a0e0b033f2104, type: 3}
   UIDragElement: {fileID: 5413559518348961204}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &3041315069612460419
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 20
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: 74fbf091bb21c3c4693a62435a29a796, type: 3}
+  PrefabToInstantiate: {fileID: 3035856120920203793, guid: af3285113a291ee4d8087780028ae305, type: 3}
   UIDragElement: {fileID: 6244225158088365451}
   Canvas: {fileID: 5453501178235138556}
 --- !u!1 &8647719434920391281
@@ -1713,6 +1713,6 @@ MonoBehaviour:
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
   cost: 30
-  PrefabToInstantiate: {fileID: 8939688613734405775, guid: 2016e6135ff664346b1e2b220a931ffc, type: 3}
+  PrefabToInstantiate: {fileID: 2157256698290114423, guid: 796f100973f0d4a419bfba427a2dd2ff, type: 3}
   UIDragElement: {fileID: 7583096855721771349}
   Canvas: {fileID: 5453501178235138556}

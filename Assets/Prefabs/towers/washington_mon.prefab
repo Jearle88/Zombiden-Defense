@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77dd903502a34790a2622bd0e401920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2584706676400539324, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
+  src: {fileID: 3171949614468235234}
   sfx1: {fileID: 8300000, guid: c94717ba3b00f2c419fe67df027e547c, type: 3}
   cooldown: 1.5
   damage: 1
