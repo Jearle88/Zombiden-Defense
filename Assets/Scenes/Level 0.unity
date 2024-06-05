@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
-  sfx1: {fileID: 8300000, guid: a8c9bf92e9152724e85bed79b6938e34, type: 3}
+  sfx1: {fileID: 8300000, guid: 8bbb54ddeaa7e4539b30bca3a43d3779, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
   PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
@@ -1412,7 +1412,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a8c9bf92e9152724e85bed79b6938e34, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8bbb54ddeaa7e4539b30bca3a43d3779, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
