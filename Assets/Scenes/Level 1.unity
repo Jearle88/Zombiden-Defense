@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2233,6 +2233,10 @@ PrefabInstance:
       propertyPath: PrefabToInstantiate
       value: 
       objectReference: {fileID: 2157256698290114423, guid: 796f100973f0d4a419bfba427a2dd2ff, type: 3}
+    - target: {fileID: 1460780565724767225, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: scenename
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2126289469265968331, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: src
       value: 
@@ -2386,6 +2390,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1313852196}
   m_SourcePrefab: {fileID: 100100000, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+--- !u!1 &1259969108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3388914041845217311, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+  m_PrefabInstance: {fileID: 1259969107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313852191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9137741013092057517, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
@@ -2853,6 +2862,10 @@ PrefabInstance:
       propertyPath: timerGUI
       value: 
       objectReference: {fileID: 1253713127}
+    - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1259969108}
     - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
       propertyPath: healthGUI
       value: 

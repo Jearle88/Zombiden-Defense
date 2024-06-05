@@ -19,10 +19,12 @@ public class playerdata : MonoBehaviour
     public TextMeshProUGUI healthGUI;
     public TextMeshProUGUI timerGUI;
     [System.NonSerialized] public bool halo_on;
+    public GameObject PauseMenu;
 
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1.0f;
         halo_on = false;
         maxHealth = startingHealth;
         currHealth = startingHealth;
@@ -33,6 +35,19 @@ public class playerdata : MonoBehaviour
     void Update()
     {
         healthGUI.text = "Health: " + currHealth.ToString() + "/" + maxHealth.ToString() + "\n" + "Money: $" + currMoney;
+        if(Input.GetKeyDown("p"))
+        {
+            if(PauseMenu.activeSelf == false)
+            {
+                Time.timeScale = 0.0f;
+                PauseMenu.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1.0f;
+                PauseMenu.SetActive(false);
+            }
+        }
         if (currHealth < 1)
         {
             timerGUI.text = "You Lose";
