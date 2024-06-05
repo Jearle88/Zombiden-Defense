@@ -40,8 +40,7 @@ public class WaveSpawner : MonoBehaviour
         {
             Debug.Log("You survived every wave!");
             timerGUI.text = "You Win!";
-            GameObject player = GameObject.Find("Player");
-            player.GetComponent<playerdata>().EndLevel();
+            SceneManager.LoadScene("Win");
         }
 
         if (readyToCountDown)
