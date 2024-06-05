@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: -2813986735270529577}
   - component: {fileID: 7021148193862654665}
   - component: {fileID: -3403170205094698446}
+  - component: {fileID: 4151533929858906846}
   m_Layer: 0
   m_Name: obama
   m_TagString: Untagged
@@ -328,6 +329,18 @@ MonoBehaviour:
   cooldown: 4
   damage: 5
   min: 0
+--- !u!122 &4151533929858906846
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3759267149518445698}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294901902
+  m_Size: 10
 --- !u!1 &4812201581505255448
 GameObject:
   m_ObjectHideFlags: 0

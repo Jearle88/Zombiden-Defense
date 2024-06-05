@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3865141736636208678}
   - component: {fileID: 4158483768937163091}
   - component: {fileID: 2584706676400539324}
+  - component: {fileID: -8199444172660341509}
   m_Layer: 0
   m_Name: Legendary
   m_TagString: Untagged
@@ -219,3 +220,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!122 &-8199444172660341509
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939688613734405775}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4282947761
+  m_Size: 5
