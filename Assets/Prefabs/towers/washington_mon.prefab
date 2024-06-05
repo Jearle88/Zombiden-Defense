@@ -9,36 +9,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02140814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02140814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.024974735
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.192975
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4.306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 22.014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.99998796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.004908927
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -46,19 +58,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -0.5629883
       objectReference: {fileID: 0}
     - target: {fileID: -1033887298828370107, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.017740956
+      value: 0.018159641
       objectReference: {fileID: 0}
     - target: {fileID: -1033887298828370107, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0028014318
+      value: 0.0028675455
       objectReference: {fileID: 0}
     - target: {fileID: -1033887298828370107, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.018538404
+      value: 0.01897591
       objectReference: {fileID: 0}
     - target: {fileID: -1033887298828370107, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79,7 +91,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
-    - {fileID: -8391222552659086748, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
     - {fileID: -8700617353114198275, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -134,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77dd903502a34790a2622bd0e401920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2584706676400539324, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
+  src: {fileID: 3171949614468235234}
   sfx1: {fileID: 8300000, guid: c94717ba3b00f2c419fe67df027e547c, type: 3}
   cooldown: 1.5
   damage: 1
