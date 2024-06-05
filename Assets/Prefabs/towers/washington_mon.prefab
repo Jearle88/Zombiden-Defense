@@ -85,24 +85,21 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -7662723642357124457}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4231171105550162381}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3441048864146468423}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -5591713174515443121}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1051435404823883247}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3171949614468235234}
   m_SourcePrefab: {fileID: 100100000, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
 --- !u!1 &5070018818832400629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
   m_PrefabInstance: {fileID: 5376517924745919908}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &-7662723642357124457
-CapsuleCollider:
+--- !u!135 &-5591713174515443121
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116,15 +113,13 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 0
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &4231171105550162381
+  serializedVersion: 3
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1051435404823883247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,14 +128,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5070018818832400629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a0d41bfc1dc24c38980ee53287e1710, type: 3}
+  m_Script: {fileID: 11500000, guid: d77dd903502a34790a2622bd0e401920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2584706676400539324, guid: e2d54fe45f9a99642806fc0c6ae0535f, type: 3}
-  sfx1: {fileID: 8300000, guid: 9efcdfc3093cfae4693bcf7c452610fe, type: 3}
-  cooldown: 4
-  damage: 5
---- !u!82 &3441048864146468423
+  src: {fileID: 2584706676400539324, guid: a0e9f48ccbed24a9e980901beea0c27c, type: 3}
+  sfx1: {fileID: 8300000, guid: c94717ba3b00f2c419fe67df027e547c, type: 3}
+  cooldown: 1.5
+  damage: 1
+  min: 0
+--- !u!82 &3171949614468235234
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +146,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 109e1e1f95a37894ea6cd9e3b626752c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -158,7 +154,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -236,24 +232,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!135 &-5591713174515443121
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5070018818832400629}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 10
-  m_Center: {x: 0, y: 0, z: 0}
