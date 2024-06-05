@@ -18,7 +18,7 @@ public class WaveSpawner : MonoBehaviour
     public TextMeshProUGUI timerGUI;
 
     public Wave[] waves;
-    public int currentWaveIndex = 0;
+    [System.NonSerialized] public int currentWaveIndex = 0;
 
     private bool readyToCountDown;
     private void Start()
@@ -32,10 +32,12 @@ public class WaveSpawner : MonoBehaviour
         {
             Debug.Log("AHHHHH");
             waves[i].enemiesLeft = waves[i].numEnemies;
+            Debug.Log(waves[i].enemiesLeft);
         }
     }
     private void Update()
     {
+        Debug.Log(currentWaveIndex);
         if (currentWaveIndex >= waves.Length)
         {
             Debug.Log("You survived every wave!");
