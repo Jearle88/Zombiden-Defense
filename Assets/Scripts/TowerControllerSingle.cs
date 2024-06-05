@@ -17,6 +17,9 @@ public class TowerControllerSingle : MonoBehaviour
 
     public float min = 0;
 
+    [System.NonSerialized] public GameObject player;
+    public Behaviour halo;
+
     private GameObject target;
 
 
@@ -61,9 +64,30 @@ public class TowerControllerSingle : MonoBehaviour
             inProcess = 0;
         }
     }
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        halo.enabled = player.GetComponent<playerdata>().halo_on;
+        Debug.Log(player.GetComponent<playerdata>().halo_on.ToString());
+    }
+
     private void Update()
     {
-        foreach(GameObject enemy in enemies.ToList()) {
+        if (Input.GetKeyDown("h"))
+        {
+            if (halo.enabled == true)
+            {
+                player.GetComponent<playerdata>().halo_on = false;
+                halo.enabled = player.GetComponent<playerdata>().halo_on;
+            }
+            else
+            {
+                player.GetComponent<playerdata>().halo_on = true;
+                halo.enabled = player.GetComponent<playerdata>().halo_on;
+            }
+        }
+        foreach (GameObject enemy in enemies.ToList()) {
             if (enemy.GetComponent<EnemyController>().health <= 0)
             {
                 enemies.Remove(enemy);

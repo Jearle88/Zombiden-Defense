@@ -92,6 +92,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3171949614468235234}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6119008467179252355}
   m_SourcePrefab: {fileID: 100100000, guid: 283a4fd314694ea49a06cd3c43e9871d, type: 3}
 --- !u!1 &5070018818832400629 stripped
 GameObject:
@@ -136,6 +139,7 @@ MonoBehaviour:
   cooldown: 1.5
   damage: 1
   min: 0
+  halo: {fileID: -6119008467179252355}
 --- !u!82 &3171949614468235234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -232,3 +236,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!122 &-6119008467179252355
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5070018818832400629}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281874488
+  m_Size: 3.5

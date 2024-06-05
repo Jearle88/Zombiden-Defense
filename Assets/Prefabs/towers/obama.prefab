@@ -329,6 +329,7 @@ MonoBehaviour:
   cooldown: 4
   damage: 5
   min: 0
+  halo: {fileID: 4151533929858906846}
 --- !u!122 &4151533929858906846
 Halo:
   m_ObjectHideFlags: 0
