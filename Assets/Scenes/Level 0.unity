@@ -1891,6 +1891,10 @@ PrefabInstance:
       propertyPath: PrefabToInstantiate
       value: 
       objectReference: {fileID: 2157256698290114423, guid: 796f100973f0d4a419bfba427a2dd2ff, type: 3}
+    - target: {fileID: 1460780565724767225, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: scenename
+      value: Level 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2126289469265968331, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: src
       value: 
@@ -1903,6 +1907,10 @@ PrefabInstance:
       propertyPath: PrefabToInstantiate
       value: 
       objectReference: {fileID: 1473760857589215377, guid: 91aba07c5ab65b04d95a0e0b033f2104, type: 3}
+    - target: {fileID: 2648353167917602587, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: scenename
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 4217205552732710265, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -1935,6 +1943,18 @@ PrefabInstance:
       propertyPath: PrefabToInstantiate
       value: 
       objectReference: {fileID: 3035856120920203793, guid: af3285113a291ee4d8087780028ae305, type: 3}
+    - target: {fileID: 4373126258946887310, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373126258946887310, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373126258946887310, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4647509320427513729, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2438,6 +2458,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Textfield: {fileID: 605830816}
   track: {fileID: 150394571}
+--- !u!1 &1531326999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3388914041845217311, guid: 2813b996333b202449fabcd80ada2d42, type: 3}
+  m_PrefabInstance: {fileID: 1259969107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1555518340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,6 +3166,10 @@ PrefabInstance:
       propertyPath: timerGUI
       value: 
       objectReference: {fileID: 1253713127}
+    - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1531326999}
     - target: {fileID: 7952978174091071060, guid: 9a6c4c291239d154b8da19ef7442ac25, type: 3}
       propertyPath: healthGUI
       value: 
