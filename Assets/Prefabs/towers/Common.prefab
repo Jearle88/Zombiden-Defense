@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3865141736636208678}
   - component: {fileID: 2584706676400539324}
   - component: {fileID: 1048097557401639744}
+  - component: {fileID: -4368827828662610547}
   m_Layer: 0
   m_Name: Common
   m_TagString: Untagged
@@ -220,3 +221,15 @@ MonoBehaviour:
   cooldown: 1.5
   damage: 1
   min: 0
+--- !u!122 &-4368827828662610547
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939688613734405775}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281874488
+  m_Size: 3.5
