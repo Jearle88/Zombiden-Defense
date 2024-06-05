@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -957,7 +957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -434.34473, y: -291.4171}
+  m_AnchoredPosition: {x: -260.17807, y: -291.4171}
   m_SizeDelta: {x: 455.9537, y: 93.1729}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605830816
@@ -1378,7 +1378,7 @@ MonoBehaviour:
     timeToNextWave: 5
     enemiesLeft: 0
   - numEnemies: 20
-    extraHealth: -1
+    extraHealth: 0
     extraSpeed: 0
     timeToNextEnemy: 2
     timeToNextWave: 5
@@ -1401,7 +1401,6 @@ MonoBehaviour:
     timeToNextEnemy: 20
     timeToNextWave: 5
     enemiesLeft: 0
-  currentWaveIndex: 0
 --- !u!82 &711229564
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2347,7 +2346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 332, y: -741}
+  m_AnchoredPosition: {x: 506.16666, y: -741}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366825243
@@ -2562,7 +2561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 147, y: -741}
+  m_AnchoredPosition: {x: 321.16666, y: -741}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719100112
@@ -2760,7 +2759,7 @@ Transform:
   m_GameObject: {fileID: 1839572080}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.067449, y: -2.7036858, z: -3.8173897}
+  m_LocalPosition: {x: -1.4, y: -2.7036858, z: -3.8173897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2999,7 +2998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: -741}
+  m_AnchoredPosition: {x: 141.16666, y: -741}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076282229

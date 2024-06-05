@@ -16,7 +16,7 @@ public class ButtonsTut : MonoBehaviour
         if (track.GetComponent<tracker>().slide == 1)
             Textfield.text = "Place towers by dragging and dropping them. Each tower is unique, doing different amounts of damage, having different reload times, and with different ranges. The legendary tower attacks everything in range!";
         if (track.GetComponent<tracker>().slide == 2)
-            Textfield.text = "You can move the camera with WASD! That's about it, have fun!";
+            Textfield.text = "You can move the camera with WASD! You can press \"p\" to pause and press \"h\" to show tower rangers. That's about it, have fun!";
         if (track.GetComponent<tracker>().slide == 3)
             Textfield.text = "";
     }
@@ -29,7 +29,7 @@ public class ButtonsTut : MonoBehaviour
         if (track.GetComponent<tracker>().slide == 1)
             Textfield.text = "Place towers by dragging and dropping them. Each tower is unique, doing different amounts of damage, having different reload times, and with different ranges. The legendary tower attacks everything in range!";
         if (track.GetComponent<tracker>().slide == 2)
-            Textfield.text = "You can move the camera with WASD! That's about it, have fun!";
+            Textfield.text = "You can move the camera with WASD! You can press \"p\" to pause and press \"h\" to show tower rangers. That's about it, have fun!";
         if (track.GetComponent<tracker>().slide == 3)
             Textfield.text = "";
     }
