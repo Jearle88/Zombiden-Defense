@@ -5,6 +5,7 @@ using UnityEngine;
 public class cameraMove : MonoBehaviour
 { 
     // Update is called once per frame
+    // basic camera mover
     void Update()
     {
         float ytranslation = Input.GetAxis("Vertical") * 0.1f;

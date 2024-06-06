@@ -22,9 +22,10 @@ public class playerdata : MonoBehaviour
     public GameObject PauseMenu;
 
     // Start is called before the first frame update
+    // Makes sure the game functions after a scene reset and that our stuff is initialized
     void Start()
     {
-        Time.timeScale = 1.0f;
+        Time.timeScale = 1.0f; 
         halo_on = false;
         maxHealth = startingHealth;
         currHealth = startingHealth;
@@ -34,7 +35,9 @@ public class playerdata : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // gives our player information
         healthGUI.text = "Health: " + currHealth.ToString() + "/" + maxHealth.ToString() + "\n" + "Money: $" + currMoney;
+        // checks if the game should be paused/unpaused
         if(Input.GetKeyDown("p"))
         {
             if(PauseMenu.activeSelf == false)
@@ -55,6 +58,7 @@ public class playerdata : MonoBehaviour
         }
     }
 
+    // old EndLevel function, do not think this is still used
     public void EndLevel()
     {
         timer += Time.deltaTime;

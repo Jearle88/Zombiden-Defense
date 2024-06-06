@@ -18,7 +18,7 @@ public class TowerController : MonoBehaviour
     [System.NonSerialized] public GameObject player;
     public Behaviour halo;
 
-
+    // adds enemies to our enemy list when they get within range
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
@@ -29,6 +29,7 @@ public class TowerController : MonoBehaviour
         }
     }
 
+    // removes enemies for our list
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
@@ -37,6 +38,7 @@ public class TowerController : MonoBehaviour
         }
     }
 
+    // Targeter to damage all targets within range
     private IEnumerator Targeter()
     {
         if (inProcess == 0)
@@ -55,15 +57,18 @@ public class TowerController : MonoBehaviour
             inProcess = 0;
         }
     }
-
+    
+    // checks if the halo toggle is on or off
     private void Start()
     {
         player = GameObject.Find("Player");
         halo.enabled = player.GetComponent<playerdata>().halo_on;
         Debug.Log(player.GetComponent<playerdata>().halo_on.ToString());
     }
+
     private void Update()
     {
+        // check if we have pressed h and if the halo should be enabled (probably could do this in player data and just have the halo always update, but this works fine)
         if (Input.GetKeyDown("h"))
         {
             if (halo.enabled == true)
@@ -77,6 +82,7 @@ public class TowerController : MonoBehaviour
                 halo.enabled = player.GetComponent<playerdata>().halo_on;
             }
         }
+        // Looks if any enemy is dead and should be removed from the list
         foreach (GameObject enemy in enemies.ToList()) {
             if (enemy.GetComponent<EnemyController>().health <= 0)
             {

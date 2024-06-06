@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     public float MoneyDealt = 10;
     public float timer;
 
+    // damage function so towers can do damage to enemies
     public void Damage(int damage)
     {
         health -= damage;
@@ -18,6 +19,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
+        // checks if the enemy should die
         if (health <= 0)
         {
             GameObject player = GameObject.Find("Player");
@@ -27,6 +29,7 @@ public class EnemyController : MonoBehaviour
             spawner.GetComponent<WaveSpawner>().waves[currentWaveIndex].enemiesLeft -= 1;
             gameObject.SetActive(false);
         }
+        // information for single target towers to know what the oldest (and presumably farthest enemy is)
         timer += Time.deltaTime;
     }
 

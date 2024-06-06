@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 
     private WaveSpawner waveSpawner;
 
+    // this was a test script used for testing wavespawning
     private void Start()
     {
         waveSpawner = GetComponentInParent<WaveSpawner>();

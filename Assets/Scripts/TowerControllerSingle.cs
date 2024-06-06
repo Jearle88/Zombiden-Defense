@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+// modified version of towercontroller for targeting single enemies
 public class TowerControllerSingle : MonoBehaviour
 {
     public AudioSource src;
@@ -50,6 +51,7 @@ public class TowerControllerSingle : MonoBehaviour
             {
                 src.clip = sfx1;
                 src.Play();
+                // gets the correct target by finding the max time an enemy in range has been alive (variable is named wrong but don't want to break anything/change multiple things)
                 foreach (GameObject enemy in enemies)
                 {
                     if (enemy.GetComponent<EnemyController>().timer > min) {
