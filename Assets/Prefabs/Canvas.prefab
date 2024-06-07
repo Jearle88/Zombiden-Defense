@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
-  cost: 50
+  cost: 300
   PrefabToInstantiate: {fileID: 1473760857589215377, guid: 91aba07c5ab65b04d95a0e0b033f2104, type: 3}
   UIDragElement: {fileID: 5413559518348961204}
   Canvas: {fileID: 5453501178235138556}
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 3015357532741326807}
   - component: {fileID: 7148283609558946825}
   m_Layer: 0
-  m_Name: 50
+  m_Name: 300
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '$50
+  m_text: '$300
 
 '
   m_isRightToLeft: 0
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
-  cost: 40
+  cost: 60
   PrefabToInstantiate: {fileID: 3759267149518445698, guid: d58fcc4e57bdd054281aa3710a35d372, type: 3}
   UIDragElement: {fileID: 8321947666505773998}
   Canvas: {fileID: 5453501178235138556}
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 7459677080046879962}
   - component: {fileID: 5107316310509117628}
   m_Layer: 0
-  m_Name: 30
+  m_Name: 40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '$30
+  m_text: '$40
 
 '
   m_isRightToLeft: 0
@@ -1725,7 +1725,7 @@ GameObject:
   - component: {fileID: 2027122585760532687}
   - component: {fileID: 7309147567580859296}
   m_Layer: 0
-  m_Name: 40
+  m_Name: 60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $40
+  m_text: $60
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: -1247519432367180875, guid: ffea9d678b109bd4baca5405f163fc1e, type: 3}
   sfx1: {fileID: 0}
-  cost: 30
+  cost: 40
   PrefabToInstantiate: {fileID: 2157256698290114423, guid: 796f100973f0d4a419bfba427a2dd2ff, type: 3}
   UIDragElement: {fileID: 7583096855721771349}
   Canvas: {fileID: 5453501178235138556}
