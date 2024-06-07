@@ -1250,7 +1250,6 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: a8c9bf92e9152724e85bed79b6938e34, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
-  PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
   timerGUI: {fileID: 1253713127}
   waves:
   - numEnemies: 10
@@ -1258,30 +1257,35 @@ MonoBehaviour:
     extraSpeed: 0
     timeToNextEnemy: 2
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
     enemiesLeft: 0
   - numEnemies: 20
     extraHealth: 3
     extraSpeed: 3
     timeToNextEnemy: 2
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
     enemiesLeft: 0
   - numEnemies: 40
-    extraHealth: 5
-    extraSpeed: 5
+    extraHealth: 0
+    extraSpeed: 0
     timeToNextEnemy: 1
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 80
-    extraHealth: 8
-    extraSpeed: 6
+    extraHealth: 3
+    extraSpeed: 1
     timeToNextEnemy: 0.5
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 2
     extraHealth: 200
-    extraSpeed: -2
+    extraSpeed: 0
     timeToNextEnemy: 20
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 878018155217611552, guid: 561dcd9af70cefa418366b70efdf893e, type: 3}
     enemiesLeft: 0
 --- !u!82 &711229564
 AudioSource:

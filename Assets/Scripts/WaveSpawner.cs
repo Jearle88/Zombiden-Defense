@@ -13,8 +13,8 @@ public class WaveSpawner : MonoBehaviour
     public AudioClip sfx1;
     [SerializeField] private float countdown;
     [SerializeField] private GameObject spawnPoint;
-    [SerializeField]
-    GameObject PrefabToInstantiate;
+    // [SerializeField]
+    // GameObject PrefabToInstantiate; Moved to Waves
     public TextMeshProUGUI timerGUI;
 
     public Wave[] waves;
@@ -94,7 +94,7 @@ public class WaveSpawner : MonoBehaviour
             for (int i = 0; i < waves[currentWaveIndex].numEnemies; i++)
             {
                 Debug.Log("WAVVVESSS");
-                CreateObject(spawnPoint.transform.position, waves[currentWaveIndex].extraHealth, waves[currentWaveIndex].extraSpeed);
+                CreateObject(spawnPoint.transform.position, waves[currentWaveIndex].extraHealth, waves[currentWaveIndex].extraSpeed, waves[currentWaveIndex].PrefabToInstantiate);
                 // Old implementation of spawning enemies (not using createobject)
                 // Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
                 //waves[currentWaveIndex].enemiesLeft--;
@@ -105,7 +105,7 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    public void CreateObject(Vector3 position, int addHealth, float addSpeed)
+    public void CreateObject(Vector3 position, int addHealth, float addSpeed, GameObject PrefabToInstantiate)
     {
         // Slightly modified drag and drop createobject function
         if (PrefabToInstantiate == null)
@@ -133,6 +133,7 @@ public class Wave
     public float extraSpeed = 0.0f;
     public float timeToNextEnemy;
     public float timeToNextWave;
+    public GameObject PrefabToInstantiate;
 
     [HideInInspector] public int enemiesLeft;
 }

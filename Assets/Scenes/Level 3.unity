@@ -2925,7 +2925,6 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: 9049176eb63d5344bb2476cac820f117, type: 3}
   countdown: 5
   spawnPoint: {fileID: 220785718}
-  PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
   timerGUI: {fileID: 1253713127}
   waves:
   - numEnemies: 10
@@ -2933,90 +2932,105 @@ MonoBehaviour:
     extraSpeed: 1
     timeToNextEnemy: 2
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
     enemiesLeft: 0
   - numEnemies: 20
     extraHealth: 5
     extraSpeed: 4
     timeToNextEnemy: 2
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 85941289338964345, guid: 95ddc2cf570e86240a229f81b6acc58b, type: 3}
     enemiesLeft: 0
   - numEnemies: 40
-    extraHealth: 7
-    extraSpeed: 6
+    extraHealth: 2
+    extraSpeed: 1
     timeToNextEnemy: 1
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 80
-    extraHealth: 10
-    extraSpeed: 7
+    extraHealth: 5
+    extraSpeed: 3
     timeToNextEnemy: 0.5
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 2
     extraHealth: 250
-    extraSpeed: -1
+    extraSpeed: 0.5
     timeToNextEnemy: 20
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 878018155217611552, guid: 561dcd9af70cefa418366b70efdf893e, type: 3}
     enemiesLeft: 0
   - numEnemies: 100
+    extraHealth: 6
+    extraSpeed: 4
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
+    enemiesLeft: 0
+  - numEnemies: 125
+    extraHealth: 9
+    extraSpeed: 6
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
+    enemiesLeft: 0
+  - numEnemies: 150
     extraHealth: 11
+    extraSpeed: 7
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
+    enemiesLeft: 0
+  - numEnemies: 175
+    extraHealth: 12
     extraSpeed: 8
     timeToNextEnemy: 0.25
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
-  - numEnemies: 125
-    extraHealth: 13
-    extraSpeed: 9
+  - numEnemies: 4
+    extraHealth: 300
+    extraSpeed: 2
+    timeToNextEnemy: 10
+    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 878018155217611552, guid: 561dcd9af70cefa418366b70efdf893e, type: 3}
+    enemiesLeft: 0
+  - numEnemies: 200
+    extraHealth: 12
+    extraSpeed: 8
     timeToNextEnemy: 0.25
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
-  - numEnemies: 150
+  - numEnemies: 225
+    extraHealth: 13
+    extraSpeed: 8
+    timeToNextEnemy: 0.25
+    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
+    enemiesLeft: 0
+  - numEnemies: 250
     extraHealth: 15
     extraSpeed: 10
     timeToNextEnemy: 0.25
     timeToNextWave: 5
-    enemiesLeft: 0
-  - numEnemies: 175
-    extraHealth: 16
-    extraSpeed: 11
-    timeToNextEnemy: 0.25
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - numEnemies: 4
-    extraHealth: 300
-    extraSpeed: 1
-    timeToNextEnemy: 10
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - numEnemies: 200
-    extraHealth: 17
-    extraSpeed: 12
-    timeToNextEnemy: 0.25
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - numEnemies: 225
-    extraHealth: 18
-    extraSpeed: 13
-    timeToNextEnemy: 0.25
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - numEnemies: 250
-    extraHealth: 19
-    extraSpeed: 14
-    timeToNextEnemy: 0.25
-    timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 275
-    extraHealth: 20
-    extraSpeed: 15
+    extraHealth: 17
+    extraSpeed: 10
     timeToNextEnemy: 0.25
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 8187777662528463251, guid: 97520fb2dbacedf40bb3ce8ebba2b9a2, type: 3}
     enemiesLeft: 0
   - numEnemies: 6
     extraHealth: 400
     extraSpeed: 3
     timeToNextEnemy: 10
     timeToNextWave: 5
+    PrefabToInstantiate: {fileID: 878018155217611552, guid: 561dcd9af70cefa418366b70efdf893e, type: 3}
     enemiesLeft: 0
 --- !u!82 &711229564
 AudioSource:
